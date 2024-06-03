@@ -78,53 +78,92 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-130px);
+    height: 35vh;
+    transform: translateY(-80px);
+    overflow: hidden;
     // position: relative;
     .left-side{
         width: 40%;
         display: flex;
 
         .card-one{
-            width: 25%;
+            width: 50%;
             float: left;
-            transform: translateX(-30px);
-            // box
+            transform: translate(-60px, 0px);
+            background-image: url('/dashboard1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            &:hover{
+                transition: all ease-out;
+                cursor: pointer;
+            }
         }
 
         .card-two{
-            width: 25%;
+            width: 50%;
             float: left;
-            transform: translateY(60px);
-        }
-
-        .right-side{
-            width: 60%;
-            display: flex;
-            
-
-        .card-three{
-            width: 25%;
-            transform: translateY(60px);
-            background-color: red;
-
-            img{
-                width: 200px;
-            }
-        }
-
-        }
-
-        img{
-            width: 200px;
-
+            transform: translate(-100px, 50px);
+            // transform: translateY(50px);
+            background-image: url('/dashboard2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
             &:hover{
+                transition: all ease-out;
                 cursor: pointer;
-                transition: all;
-                scale: 1.1;
             }
         }
+
+       
+
         
     }
+
+     .right-side{
+            width: 60%;
+            display: flex;
+            overflow: hidden;
+
+            .card-three{
+                width: 38%;
+                float: left;
+                background-image: url('/dashboard3.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(130px, 40px);
+                &:hover{
+                    transition: all ease-out;
+                    cursor: pointer;
+            }
+        }
+
+         .card-four{
+                width: 33%;
+                float: left;
+                background-image: url('/dashboard4.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(90px, 30px);
+                z-index: 999;
+                &:hover{
+                    transition: all ease-out;
+                    cursor: pointer;
+            }
+        }
+
+        .card-fifth{
+                width: 36%;
+                float: right;
+                background-image: url('/dashboard5.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(60px, 0px);
+                z-index: 999;
+                &:hover{
+                    transition: all ease-out;
+                    cursor: pointer;
+            }
+        }
     
+        
  
-}
+    }}

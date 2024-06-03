@@ -1,0 +1,61 @@
+.service-section {
+    width: 100%;
+    float: left;
+    padding: 40px 0;
+    background: linear-gradient(0deg, #6575E4, #9257B9);
+    height: 80vh;
+}
+
+.service-heading {
+    align-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: white;
+    padding: 40px 0;
+}
+
+.service-card{
+    width: 70%;
+    height: 80vh;
+    margin-bottom: 30px;
+    background-image: url('/sec-5-banner.png');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card{
+        width: 30%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 60vh;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 20px 10px;
+
+        span{
+            color: #9257B9;
+        }
+
+        h3{
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        p{
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        button{
+            width: 60%;
+            // padding: 15px 0;
+            margin-bottom: 5px;
+        }
+    }
+}
