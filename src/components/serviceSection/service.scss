@@ -6,26 +6,48 @@
     height: 80vh;
 }
 
+
 .service-heading {
-    align-content: space-between;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     width: 70%;
     color: white;
     padding: 40px 0;
+
+    h3{
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    button{
+        border: 1px solid white;
+        padding: 5px 15px;
+        background-color: transparent;
+        color: white;
+    }
 }
 
 .service-card{
-    width: 70%;
+    width: 85%;
     height: 80vh;
     margin-bottom: 30px;
     background-image: url('/sec-5-banner.png');
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    // padding: 0 40px;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
+.cards-main{
+    max-width: 88%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
 
     .card{
         width: 30%;
@@ -37,6 +59,19 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         padding: 20px 10px;
+
+        button{
+            background-color: transparent;
+            background-image: url('/button.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: transparent;
+            height: 45px;
+        }
 
         span{
             color: #9257B9;
@@ -57,5 +92,17 @@
             // padding: 15px 0;
             margin-bottom: 5px;
         }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-section{
+        height: auto;
+        width: auto;
+    }
+
+    .service-card{
+        height: 230vh;
     }
 }

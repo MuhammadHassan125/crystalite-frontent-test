@@ -25,11 +25,11 @@ const Header = () => {
         <div className='right-side-header'>
               <div className='phone-no'>
                   <img src='/phone.png' alt='phone'/>
-                  <h3>(833)-800-0083</h3>
+                  <p>(833)-800-0083</p>
               </div>
 
               <div className='get-a-call'>
-                  <button>Get A Call</button>
+                  <button><p>Get A Call</p></button>
               </div>
         </div>
     </main>

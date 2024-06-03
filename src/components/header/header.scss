@@ -3,6 +3,9 @@
   width: 100%;
   justify-content: space-between;
   padding: 25px 0;
+  font-size: 14px;
+
+
 
   .logo {
     width: 10%;
@@ -32,15 +35,47 @@
         display: flex;
         align-items: center;
         border-right: 1px solid white;
+        padding-right: 15px;
     }
-    .get-a-call{
-       button{
-        clip-path: polygon(86% 21%, 100% 32%, 100% 55%, 10% 54%, 0 45%, 0 21%);
-        padding: 20px 10px;
-        text-align: center;
-        height: 40px;
-       }
-    }
+    .get-a-call {
+      padding-left: 10px;
+  
+      button {
+          width: 120px; /* Set the desired width of the button */
+          height: 30px; /* Set the desired height of the button */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background-image: url('/button.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: transparent;
+          color: white;
+          border: none; /* Remove default button border */
+          padding: 0; /* Ensure no extra padding inside the button */
+          margin: 0; /* Remove any margin */
+          line-height: normal; /* Ensure normal line height for the text */
+          font-size: 14px; /* Adjust font size if necessary */
+          box-sizing: border-box; /* Ensure padding and border are included in the button's total width and height */
+      }
+  }
   }
 
+}
+
+
+@media screen and (max-width: 768px) {
+  .header{
+    flex-direction: column;
+
+  }
+
+  .nav-items{
+      display: block;
+  }
+
+  .right-side-header{
+    display: block;
+  }
 }

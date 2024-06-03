@@ -12,7 +12,7 @@
     
     h3{
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 30px;
 
         span{
             color: #9257B9;
@@ -27,8 +27,8 @@
     }
 }
 .testimonial-slider {
-    max-width: 1000px;
-    width: 100%;
+    // max-width: 1000px;
+    // width: 100%;
     margin: 0 auto;
     position: relative;
 
@@ -41,8 +41,18 @@
     transition: transform 0.5s ease-in-out;
   }
   
+  @media screen and (max-width: 768px) {
+    .slides{
+
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+      gap: 8px;
+      margin-top: 20px;
+    }
+  }
   .slide {
-    min-width: 33.33%; 
+    min-width: 30%; 
     box-sizing: border-box;
     text-align: center;
     padding: 20px;

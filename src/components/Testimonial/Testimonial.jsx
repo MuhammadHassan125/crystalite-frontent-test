@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, Fragment } from "react";
 import "./testimonial.scss";
 import ReviewsSlider from "./ReviewsSlider";
+import { Reveal } from "../../utils/Reveal";
 
 const testimonials = [
   {
@@ -70,13 +71,18 @@ const TestimonialsSlider = () => {
           <div className="testimonial-heading">
             <h3>Our Opinions May Not Matter</h3>
             <h3>
+              
               To You; But Can You Deny Our <span>Customer's Sayings?</span>
             </h3>
 
+
             <p>
+            <Reveal>
+
               It's enough to say good words about our brand. We thought of
               sharing our client's happy and honest reviews with you so that you
               can be unbiased with us!
+            </Reveal>
             </p>
           </div>
 
