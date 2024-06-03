@@ -1,13 +1,15 @@
-import React from 'react'
-import HeroSection from '../../components/heroSection/HeroSection';
+import React from "react";
+import HeroSection from "../../components/heroSection/HeroSection";
+import ContactSection from "../../components/contactSection/ContactSection";
+import FeaturedOrganizations from "../../components/featuredOrganizations/FeaturedOrganizations";
 const LandingPage = () => {
-
   return (
     <>
-    <HeroSection/>
+      <HeroSection />
+      <ContactSection />
+      <FeaturedOrganizations />
     </>
-  )
-}
+  );
+};
 
-
-export default LandingPage
+export default LandingPage;
