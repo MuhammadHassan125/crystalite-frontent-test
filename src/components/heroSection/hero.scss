@@ -1,0 +1,130 @@
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url('/hero-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    float: left;
+    width: 100%;
+    color: white;
+};
+
+
+.hero-main {
+    // width: 80%;
+    // background-color: red;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: pin;
+
+    .hero-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    h4{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+        background: linear-gradient(0deg, #6575E4, #9257B9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+    div{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+.brand-logos-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    .brand-logo img{
+        width: 65%;
+    }
+}
+
+.talk-export-btn{
+    width: auto;
+    margin: 0 auto;
+}
+
+.hero-bottom-cards{
+    width: 100%;
+}
+
+.card-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-130px);
+    // position: relative;
+    .left-side{
+        width: 40%;
+        display: flex;
+
+        .card-one{
+            width: 25%;
+            float: left;
+            transform: translateX(-30px);
+            // box
+        }
+
+        .card-two{
+            width: 25%;
+            float: left;
+            transform: translateY(60px);
+        }
+
+        .right-side{
+            width: 60%;
+            display: flex;
+            
+
+        .card-three{
+            width: 25%;
+            transform: translateY(60px);
+            background-color: red;
+
+            img{
+                width: 200px;
+            }
+        }
+
+        }
+
+        img{
+            width: 200px;
+
+            &:hover{
+                cursor: pointer;
+                transition: all;
+                scale: 1.1;
+            }
+        }
+        
+    }
+    
+ 
+}
